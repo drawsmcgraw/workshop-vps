@@ -3,8 +3,7 @@ resource "digitalocean_droplet" "workshop-droplet" {
   name = "workshop"
   region = "nyc3"
   size = "16gb"
-  #ssh_keys = ["terraform-digitalocean-20200721"]
-  ssh_keys = ["27982031"]
+  ssh_keys = [var.ssh_keypair_id]
 
   # Copy in the bash script we want to execute.
   # The source is the location of the bash script
