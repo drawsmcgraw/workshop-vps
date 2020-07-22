@@ -1,0 +1,24 @@
+# Your Personal Access Token
+variable "do_token" {
+  type = string
+  default = ""
+}
+
+# Location, on disk on your workstation, where your public SSH key can be found
+variable "pub_key" {
+  type = string
+  default = "~/.ssh/id_rsa.pub"
+}
+
+# Location, on disk on your workstation, where your private SSH key can be found
+# This is the SSH key Terraform will use to SSH into your droplet.
+variable "pvt_key" {
+  type = string
+  default = "~/.ssh/digitalocean.pem"
+}
+
+# Found in the keypair dashboard on DigitalOcean.
+variable "ssh_fingerprint" {
+  type = string
+  default = ""
+}

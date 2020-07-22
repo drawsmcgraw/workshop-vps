@@ -1,0 +1,12 @@
+# JetBrains
+.idea
+
+# DirEnv
+.envrc
+
+# Terraform
+plan
+terraform.tfstate.backup
+terraform.tfstate
+.terraform
+tfvars.tf
